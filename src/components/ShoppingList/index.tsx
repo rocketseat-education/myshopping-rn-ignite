@@ -1,17 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FlatList } from 'react-native';
+import firestore from '@react-native-firebase/firestore';
 
 import { styles } from './styles';
 import { Product, ProductProps } from '../Product';
 
-type Props = {
-  data: ProductProps[];
-}
+export function ShoppingList() {
+  const [products, setProducts] = useState<ProductProps[]>([]);
 
-export function ShoppingList({ data }: Props) {
+  /*  
+   useEffect(() => {
+      firestore()
+        .collection('products')
+        .get()
+        .then(response => {
+          const data = response.docs.map(doc => {
+            return {
+              id: doc.id,
+              ...doc.data()
+            }
+          }) as ProductProps[];
+  
+          setProducts(data);
+        })
+        .catch(error => console.error(error));
+    }, []); 
+    */
+
+
+  useEffect(() => {
+    firestore()
+      .collection('products')
+      .doc('1Aknzma24wAlK3VcA44M')
+      .get()
+      .then(response => console.log({
+        id: response.id,
+        ...response.data()
+      }));
+  }, []);
+
+
   return (
     <FlatList
-      data={data}
+      data={products}
       keyExtractor={item => item.id}
       renderItem={({ item }) => <Product data={item} />}
       showsVerticalScrollIndicator={false}
