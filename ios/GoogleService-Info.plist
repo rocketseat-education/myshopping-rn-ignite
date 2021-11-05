@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>565757857440-5nl2eca83l28u4gjihc9l5di49e8iik9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.565757857440-5nl2eca83l28u4gjihc9l5di49e8iik9</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>565757857440-ia7mopdj6t3us670ioa5cori20n9770d.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCXJ-aWnyZsnM169vPECnZLsLYDpyNH5F4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>565757857440</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.name.myshopping</string>
+	<key>PROJECT_ID</key>
+	<string>myshopping-f69ae</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myshopping-f69ae.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:565757857440:ios:ccd1c6d2d625d435ec83c5</string>
+</dict>
+</plist>
