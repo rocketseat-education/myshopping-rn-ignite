@@ -8,7 +8,7 @@ import { Container } from './styles';
 export function Products() {
   return (
     <Container>
-      <Header title="Lista de compras" />
+      <Header title="Lista de compras" showLogoutButton />
       <FormBox />
       <ShoppingList />
     </Container>

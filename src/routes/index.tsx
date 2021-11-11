@@ -13,16 +13,17 @@ export function Routes() {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    const subscriber = auth().onAuthStateChanged((user) => {
-      setUser(user);
+    const subscriber = auth().onAuthStateChanged((userInfo) => {
+      console.log(userInfo);
+      setUser(userInfo);
     });
 
-    return subscriber; // unsubscribe on unmount
+    return subscriber;
   }, []);
 
   return (
     <NavigationContainer>
-      <SignIn />
+      {user ? <AppRoutes /> : <SignIn />}
     </NavigationContainer>
   )
 }

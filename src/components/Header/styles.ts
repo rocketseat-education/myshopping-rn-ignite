@@ -1,12 +1,18 @@
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
-export const Container = styled.View`
+type ContainerProps = {
+  showLogoutButton: boolean;
+}
+
+export const Container = styled.View<ContainerProps>`
   width: 100%;
   height: 100px;
   background-color: ${({ theme }) => theme.COLORS.PURPLE};
+
+  flex-direction: ${({ showLogoutButton }) => showLogoutButton ? 'row' : 'column'};
   align-items: center;
-  justify-content: center;
+  justify-content: ${({ showLogoutButton }) => showLogoutButton ? 'space-around' : 'center'};
 `;
 
 export const Title = styled.Text`
