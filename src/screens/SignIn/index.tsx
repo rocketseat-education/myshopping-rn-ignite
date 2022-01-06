@@ -13,11 +13,12 @@ export function SignIn() {
 
       <Input
         placeholder="e-mail"
+        keyboardType="email-address"
       />
 
       <Input
         placeholder="senha"
-        keyboardType="email-address"
+        secureTextEntry
       />
 
       <Button title="Entrar" onPress={() => { }} />
