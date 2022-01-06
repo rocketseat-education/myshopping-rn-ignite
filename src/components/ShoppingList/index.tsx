@@ -11,7 +11,7 @@ export function ShoppingList() {
 
   return (
     <FlatList
-      data={shoppingListExample}
+      data={products}
       keyExtractor={item => item.id}
       renderItem={({ item }) => <Product data={item} />}
       showsVerticalScrollIndicator={false}
