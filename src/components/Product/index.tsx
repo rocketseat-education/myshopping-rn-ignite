@@ -18,8 +18,7 @@ type Props = {
 export function Product({ data }: Props) {
   function handleDoneToggle() {
     firestore().collection('products').doc(data.id).update({
-      done: !data.done,
-      description: 'Coca-Cola'
+      done: !data.done
     });
   }
 
